@@ -5,12 +5,13 @@ using UnityEngine;
 public class AttackController : MonoBehaviour
 {
     public Animation anim;
+    public SpriteRenderer sr;
+    public BoxCollider2D col;
 
     private bool isAttacking;
     private bool attackOnCooldown;
     public float attackCooldownTime;
 
-    public SpriteRenderer sr;
     public Sprite leftUpAttack;
     public Sprite leftDownAttack;
     public Sprite rightUpAttack;
@@ -42,24 +43,28 @@ public class AttackController : MonoBehaviour
                 // Mouse is on the top-left side
                 sr.sprite = leftUpAttack;
                 sr.sortingOrder = 5;
+                OffsetAttackCollider(-0.5f, 0.5f);
             }
             else if (isMouseOnLeftSide && isMouseOnBottomHalf)
             {
                 // Mouse is on the bottom-left side
                 sr.sprite = leftDownAttack;
                 sr.sortingOrder = 50;
+                OffsetAttackCollider(-0.5f, -0.5f);
             }
             else if (isMouseOnRightSide && isMouseOnTopHalf)
             {
                 // Mouse is on the top-right side
                 sr.sprite = rightUpAttack;
                 sr.sortingOrder = 5;
+                OffsetAttackCollider(0.5f, 0.5f);
             }
             else if (isMouseOnRightSide && isMouseOnBottomHalf)
             {
                 // Mouse is on the bottom-right side
                 sr.sprite = rightDownAttack;
                 sr.sortingOrder = 50;
+                OffsetAttackCollider(0.5f, -0.5f);
             }
 
             StartCoroutine("attackTime");
@@ -72,6 +77,7 @@ public class AttackController : MonoBehaviour
         anim.Rewind();
         yield return new WaitForSeconds(0.2f);
         sr.sprite = null;
+        col.enabled = false;
         isAttacking = false;
         attackOnCooldown = true;
         StartCoroutine("attackCooldown");
@@ -81,5 +87,11 @@ public class AttackController : MonoBehaviour
     {
         yield return new WaitForSeconds(attackCooldownTime);
         attackOnCooldown = false;
+    }
+
+    private void OffsetAttackCollider(float x, float y)
+    {
+        col.enabled = true;
+        col.offset = new Vector2(x, y);
     }
 }

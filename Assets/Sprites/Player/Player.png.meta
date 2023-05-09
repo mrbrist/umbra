@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 60c51a55afd6b994485f34ce05052a17
+guid: 890ac94a9e2363046a67bb1ce49c07eb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Knight_0
+      name: Player_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fed14960910ba641b5cd6ad1941876f
-      internalID: 2016595798
+      spriteID: 3c33f02a2306b8d47850e3c8e25d74ea
+      internalID: -626546832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_1
+      name: Player_1
       rect:
         serializedVersion: 2
         x: 16
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b2b3ca98d7513f4588599985677084b
-      internalID: -1077756811
+      spriteID: 87417f7860775d2429d0df7b0f75c927
+      internalID: 767582964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_2
+      name: Player_2
       rect:
         serializedVersion: 2
         x: 32
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46ff0c909e0d55c479885cd5dfd0b44e
-      internalID: -1656242037
+      spriteID: 910c57291f836904d8c92522dc5c8334
+      internalID: 1564804184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_3
+      name: Player_3
       rect:
         serializedVersion: 2
         x: 48
@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59a8f0b195a51de48910ba19410fe257
-      internalID: -449653404
+      spriteID: d20e27b9cfdf02f40967c1ef496894cb
+      internalID: 1220281145
       vertices: []
       indices: 
       edges: []
@@ -198,10 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Knight_2: -1656242037
-      Knight_3: -449653404
-      Knight_0: 2016595798
-      Knight_1: -1077756811
+      Player_2: 1564804184
+      Player_1: 767582964
+      Player_0: -626546832
+      Player_3: 1220281145
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

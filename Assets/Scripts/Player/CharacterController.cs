@@ -7,10 +7,12 @@ public class CharacterController : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
+    private SpriteRenderer sr;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -27,5 +29,13 @@ public class CharacterController : MonoBehaviour
 
         // Move the character
         rb.velocity = movement;
+
+        if (moveHorizontal > 0)
+        {
+            sr.flipX = false;
+        } else if (moveHorizontal < 0)
+        {
+            sr.flipX = true;
+        }
     }
 }

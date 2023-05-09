@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 366300659}
   - component: {fileID: 366300660}
   - component: {fileID: 366300661}
+  - component: {fileID: 366300662}
   m_Layer: 0
   m_Name: Slash
   m_TagString: Untagged
@@ -198,7 +199,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 50
   m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -224,6 +225,32 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!61 &366300662
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366300658}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3512,7 +3539,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -1077756811, guid: 60c51a55afd6b994485f34ce05052a17, type: 3}
+  m_Sprite: {fileID: 767582964, guid: 890ac94a9e2363046a67bb1ce49c07eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3572,7 +3599,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &2104240692
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3612,8 +3639,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 366300661}
-  attackCooldownTime: 0.1
   sr: {fileID: 366300660}
+  col: {fileID: 366300662}
+  attackCooldownTime: 0.1
   leftUpAttack: {fileID: -954326852, guid: 8f651bb9cd7d2a64f9143d38fa876dfb, type: 3}
   leftDownAttack: {fileID: -1983705200, guid: 8f651bb9cd7d2a64f9143d38fa876dfb, type: 3}
   rightUpAttack: {fileID: -739271887, guid: 8f651bb9cd7d2a64f9143d38fa876dfb, type: 3}
