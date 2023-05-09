@@ -1,4 +1,5 @@
 ![Banner](Art/Banner.svg)
+
 Welcome to Umbra, a thrilling roguelite game where you embark on an epic adventure as a courageous cat! Prepare yourself for a captivating journey filled with danger, mystery, and lots of fun. Explore procedurally generated dungeons, overcome challenging enemies, and uncover the secrets of the enchanted world.
 
 ### Features
@@ -10,4 +11,4 @@ Welcome to Umbra, a thrilling roguelite game where you embark on an epic adventu
 - **Uncover Secrets:** Dive into a richly detailed world filled with hidden lore, quests, and mysterious encounters waiting to be unraveled.
 
 ### Gameplay
-Umbra offers a blend of fast-paced action, strategic decision-making, and roguelite mechanics. You'll navigate through perilous dungeons, avoiding traps, solving puzzles, and engaging in intense battles. As you progress, you'll gain experience, unlock new abilities, and collect powerful artifacts to aid you in your journey. 
+Umbra offers a blend of fast-paced action, strategic decision-making, and roguelite mechanics. You'll navigate through perilous dungeons, avoiding traps, solving puzzles, and engaging in intense battles. As you progress, you'll gain experience, unlock new abilities, and collect powerful artifacts to aid you in your journey.
