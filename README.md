@@ -1,5 +1,7 @@
 ![Banner](Art/Banner.svg)
 
+<!-- ![lines](https://img.shields.io/tokei/lines/github/mrbrist/umbra) -->
+
 Welcome to Umbra, a thrilling roguelite game where you embark on an epic adventure as a courageous cat! Prepare yourself for a captivating journey filled with danger, mystery, and lots of fun. Explore procedurally generated dungeons, overcome challenging enemies, and uncover the secrets of the enchanted world.
 
 ### Features
